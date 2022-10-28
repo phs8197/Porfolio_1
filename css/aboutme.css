@@ -1,12 +1,10 @@
-/* section1 */
 #aboutme {
-  width: 100%;
-  height: 100%;
+  background-color: #ffe9e9;
 }
-#aboutme .section1 {
+#aboutme .section2 {
   background-color: #eb5d62;
   width: 100%;
-  height: 180px;
+  height: 130px;
   color: white;
   font-size: 3vw;
   display: flex;
@@ -17,66 +15,187 @@
   top: 0;
   z-index: 10;
 }
-
-/* section2 */
-#aboutme .section2 .column1,
-#aboutme .section2 .column2 {
+/* aboutme section3 */
+#aboutme .section3 {
+  color: #344ca4;
+  background: #ffe9e9;
   display: flex;
+  flex-direction: column;
+  font-size: 4vw;
+  line-height: 160%;
+  padding-top: 6vw;
+  padding-bottom: 12vw;
+  padding-left: 4vw;
+  position: relative;
+}
+
+#aboutme .section3 p {
+  width: 80%;
+}
+#aboutme .section3 .character {
+  width: 30%;
+  position: absolute;
+  top: 40%;
+  left: 65%;
+  height: 10%;
+}
+#aboutme .section3 .character img {
   width: 100%;
   height: 100%;
 }
-#aboutme .section2 .content_box {
+/* 소통하는 것을 좋아하고 */
+#aboutme .section3 em:nth-child(1) {
+  border-bottom: 5px solid #ffb1b3;
+}
+/* 3이 상황 */
+#aboutme .section3 p em:nth-child(3) {
+  border: 3px solid #ffb1b3;
+  padding: 5px;
+  border-radius: 60%;
+}
+
+/* 인지 */
+#aboutme .section3 p em:nth-child(5) {
+  background-color: #ffb1b3;
+}
+
+/* 긍정적인 */
+#aboutme .section3 p em:nth-child(11) {
+  background-color: #ffb1b3;
+}
+
+.img1,
+.img2,
+.img3 {
+  background-size: cover;
+  width: 7%;
+  height: 7%;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 8px;
+  margin-top: 1%;
+}
+
+/* section4 */
+
+#aboutme .section4 {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#aboutme .section4 .column1,
+#aboutme .section4 .column2 {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 70%;
+}
+
+#aboutme .section4 .content_box {
   width: 33.33%;
-  height: 400px;
-  background-color: #eb5d62;
+  /* height: 420px; */
+  position: relative;
+  aspect-ratio: auto 1/1;
+  overflow: hidden;
   box-sizing: border-box;
 }
-#aboutme .section2 .content_box.first {
-  border-radius: 70% 0 0 0;
+#aboutme .section4 .content_box.first {
+  border-radius: 0 0 0 70%;
   position: relative;
+  background-color: #eb5d62;
+  cursor: pointer;
 }
-#aboutme .section2 .content_box.first::after {
-  content: "열정적인";
+
+#aboutme .section4 .content_box.second {
+  position: relative;
+  perspective: 1000px;
+  border-radius: 8%;
+}
+.content_box.second .front,
+.content_box.second .back {
   position: absolute;
-  top: 300px;
-  left: 260px;
-  color: white;
-  font-size: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: transform 1s;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border-radius: 8%;
 }
-#aboutme .section2 .content_box.second {
-  border-radius: 40%;
-  background: url(../image/IMG_0312.JPG) center center;
-  background-size: cover;
+.front img,
+.back img {
+  width: 100%;
+  transition: all 0.6s ease 0.2s;
+  border-radius: 20px 20px 0 0;
 }
-#aboutme .section2 .content_box.second:hover {
-  transform: translateY(180deg);
-  transition: all 0.7s ease-in-out;
+.content_box.second .back {
+  transform: rotateY(-180deg);
+}
+.content_box.second:hover .front {
   transform: rotateY(180deg);
 }
-#aboutme .section2 .content_box.third {
-  border-radius: 0 80% 0 80%;
-  background-color: #5cc9c2;
+.content_box.second:hover .back {
+  transform: rotateY(0);
 }
-#aboutme .section2 .content_box.fourth {
+#aboutme .section4 .content_box.third {
+  border-radius: 80% 0 0 80%;
+  background-color: #fdf78f;
+  cursor: pointer;
+  animation: transition 0.6s ease-in-out;
+  margin-right: 0;
+}
+
+#aboutme .section4 .content_box.fourth {
   border-radius: 0 0 60% 0;
   background: url(../image/IMG_6416.JPG) center center;
   background-size: cover;
 }
-#aboutme .section2 .content_box.fifth {
+#aboutme .section4 .content_box.fifth {
   background-color: #344ca4;
   position: relative;
+  border-radius: 50%;
+  cursor: pointer;
 }
-#aboutme .section2 .content_box.fifth::after {
-  content: "노력파";
+
+#aboutme .section4 .content_box.sixth {
+  border-radius: 0 0 0 60%;
+  background: url(../image/IMG_1134.JPG) center center;
+  background-size: cover;
+  margin-right: 0;
+}
+#aboutme .section4 .content_box.first::after {
+  content: "";
   position: absolute;
-  top: 50%;
+  top: 15%;
+  left: 20%;
+  color: white;
+  font-size: 3vw;
+  font-weight: 500;
+}
+#aboutme .section4 .content_box.third::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  color: white;
+  font-size: 3vw;
+  font-weight: 500;
+  color: #344ca4;
+}
+#aboutme .section4 .content_box.fifth::after {
+  content: "";
+  position: absolute;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 3vw;
-}
-#aboutme .section2 .content_box.sixth {
-  border-radius: 0 0 0 60%;
-  background: url(../image/IMG_1134.JPG) center center;
-  background-size: cover;
+  font-weight: 500;
 }
