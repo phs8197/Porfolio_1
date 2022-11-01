@@ -15,8 +15,8 @@
   box-sizing: border-box;
 }
 #header ul button {
-  border: 1px solid #344ca4;
-  color: #344ca4;
+  border: 1px solid #0e2a93;
+  color: #0e2a93;
   background: none;
   margin-right: 10px;
   padding: 7px 15px;
@@ -25,21 +25,21 @@
 }
 #header ul button:hover {
   color: white;
-  background-color: #344ca4;
+  background-color: #0e2a93;
 }
 #header ul:last-child button {
   margin-right: 25px;
   color: white;
-  background-color: #344ca4;
+  background-color: #0e2a93;
 }
 #header ul:last-child button:hover {
-  border: 1px solid #344ca4;
-  color: #344ca4;
+  border: 1px solid #0e2a93;
+  color: #0e2a93;
   background: none;
 }
 
 #main {
-  color: #344ca4;
+  color: #0e2a93;
   background-color: #f8f8f8;
   width: 100%;
   height: 100%;

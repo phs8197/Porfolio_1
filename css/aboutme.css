@@ -13,11 +13,11 @@
   border-radius: 0 0 120em 120em;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 30;
 }
 /* aboutme section3 */
 #aboutme .section3 {
-  color: #344ca4;
+  color: #0e2a93;
   background: #ffe9e9;
   display: flex;
   flex-direction: column;
@@ -27,6 +27,7 @@
   padding-bottom: 12vw;
   padding-left: 4vw;
   position: relative;
+  z-index: 5;
 }
 
 #aboutme .section3 p {
@@ -87,30 +88,58 @@
 #aboutme .section4 .column1,
 #aboutme .section4 .column2 {
   display: flex;
-  justify-content: center;
-  width: 90%;
-  height: 70%;
+  width: 93vw;
+  height: 31vw;
+  position: relative;
 }
 
 #aboutme .section4 .content_box {
-  width: 33.33%;
-  /* height: 420px; */
+  width: 31vw;
   position: relative;
   aspect-ratio: auto 1/1;
-  overflow: hidden;
   box-sizing: border-box;
 }
 #aboutme .section4 .content_box.first {
   border-radius: 0 0 0 70%;
-  position: relative;
   background-color: #eb5d62;
   cursor: pointer;
+  color: white;
+  font-weight: 300;
+  height: 31vw;
 }
-
+#aboutme .section4 .content_box.first.red {
+  height: 62vw;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+#aboutme .section4 .content_box.first p {
+  font-size: 1.5em;
+  position: absolute;
+  top: 17%;
+  left: 13%;
+}
+#aboutme .section4 .passion {
+  position: absolute;
+  top: 12%;
+  left: 4%;
+  color: white;
+  font-size: 3vw;
+  font-weight: 300;
+  z-index: 2;
+}
 #aboutme .section4 .content_box.second {
-  position: relative;
   perspective: 1000px;
   border-radius: 8%;
+  margin-left: 31vw;
+}
+#aboutme .section4 .challenge {
+  position: absolute;
+  top: 12%;
+  right: 3%;
+  color: #0e2a93;
+  font-size: 3vw;
+  font-weight: 300;
 }
 .content_box.second .front,
 .content_box.second .back {
@@ -149,53 +178,60 @@
   background-color: #fdf78f;
   cursor: pointer;
   animation: transition 0.6s ease-in-out;
-  margin-right: 0;
+  left: auto;
+  top: 0%;
+  position: absolute;
+  width: 62vw;
+  height: 31vw;
+  transform: translateX(31vw);
 }
-
+#aboutme .section4 .content_box.third p {
+  text-align: end;
+  font-size: 1.5em;
+  position: absolute;
+  top: 35%;
+  right: 4%;
+  color: #0e2a93;
+}
 #aboutme .section4 .content_box.fourth {
   border-radius: 0 0 60% 0;
   background: url(../image/IMG_6416.JPG) center center;
   background-size: cover;
+  position: absolute;
 }
 #aboutme .section4 .content_box.fifth {
-  background-color: #344ca4;
-  position: relative;
-  border-radius: 50%;
+  background-color: #0e2a93;
+  border-radius: 0 20% 20% 0;
   cursor: pointer;
+  margin-left: 31vw;
+  width: 62vw;
+  height: 31vw;
+  position: absolute;
+  z-index: 2;
 }
-
+#aboutme .section4 .content_box.fifth p {
+  font-size: 1.5em;
+  position: absolute;
+  top: 37%;
+  left: 7%;
+  color: white;
+}
+#aboutme .section4 .positive {
+  position: absolute;
+  top: 13%;
+  left: 38%;
+  color: #fff;
+  font-size: 3vw;
+  font-weight: 300;
+  z-index: 3;
+}
 #aboutme .section4 .content_box.sixth {
   border-radius: 0 0 0 60%;
   background: url(../image/IMG_1134.JPG) center center;
   background-size: cover;
-  margin-right: 0;
-}
-#aboutme .section4 .content_box.first::after {
-  content: "";
   position: absolute;
-  top: 15%;
-  left: 20%;
-  color: white;
-  font-size: 3vw;
-  font-weight: 500;
+  margin-left: 62vw;
 }
-#aboutme .section4 .content_box.third::after {
-  content: "";
-  position: absolute;
-  top: 15%;
-  left: 35%;
-  color: white;
-  font-size: 3vw;
-  font-weight: 500;
-  color: #344ca4;
-}
-#aboutme .section4 .content_box.fifth::after {
-  content: "";
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 3vw;
-  font-weight: 500;
+.hidden {
+  display: none;
 }
