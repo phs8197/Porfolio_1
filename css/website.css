@@ -5,7 +5,7 @@
 #website .section1 {
   background-color: #0e2a93;
   width: 100%;
-  height: 140px;
+  height: 3em;
   color: white;
   font-size: 2.8vw;
   display: flex;
@@ -26,7 +26,6 @@
   align-items: center;
   justify-content: center;
   margin-top: 5%;
-  margin-bottom: 2%;
 }
 #website .section2 p:first-child {
   font-size: 4vw;
@@ -51,7 +50,7 @@
   background-color: #a7b9fc;
   opacity: 70%;
   width: 100%;
-  height: 20px;
+  height: 30%;
   left: -1%;
   top: 70%;
   position: absolute;
@@ -65,10 +64,9 @@
 }
 #website .section3 .container {
   width: 90%;
-  height: 470px;
   border-radius: 50px;
   display: flex;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 #website .section3 .container.responsive {
   background-color: #0e2a93;
@@ -82,8 +80,9 @@
   color: 000;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding-top: 4%;
+  align-items: space-between;
+  justify-content: space-between;
+  padding: 4% 0;
   padding-left: 5%;
 }
 .section3 .container .column1.megabox_text {
@@ -95,8 +94,8 @@
   color: #fff;
 }
 .section3 .container .column1 .title_ko {
-  font-size: 1em;
-  font-weight: 200;
+  font-size: 1.3em;
+  font-weight: 400;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -105,24 +104,24 @@
 }
 
 .section3 .container .column1 .article {
-  padding-top: 10%;
+  padding-top: 8%;
   font-size: 1em;
   font-weight: 300;
-  line-height: 160%;
-  letter-spacing: 1.3px;
+  line-height: 150%;
+  letter-spacing: 1px;
   color: #fff;
 }
 .section3 .container .column1 .button {
   width: 80%;
   display: flex;
   flex-direction: row;
-  margin-top: 7%;
+  margin-top: 6%;
 }
 .section3 .container .responsive_text .button button {
   border: none;
   background-color: #fff;
   color: #0e2a93;
-  padding: 10px 50px;
+  padding: 2% 10%;
   font-family: GmarketSans;
   font-size: 1em;
   border-radius: 22px;
@@ -133,7 +132,7 @@
   border: none;
   background-color: white;
   color: #2c218f;
-  padding: 10px 50px;
+  padding: 2% 10%;
   font-family: GmarketSans;
   border-radius: 23px;
   margin-right: 5%;
